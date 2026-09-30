@@ -1,0 +1,8 @@
+pandas>=2.2
+numpy
+requests
+yfinance
+statsmodels
+streamlit>=1.50
+plotly
+pytest
