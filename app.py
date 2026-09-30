@@ -11,7 +11,7 @@ import data
 
 st.set_page_config(page_title="Gold Tracker India", layout="wide")
 st.title("Gold Tracker: Indian Investor View")
-st.caption("Global gold → USD/INR → Indian market factors. Framework inspired by The Valuation School's gold checklist.")
+st.caption("Global gold → USD/INR → Indian market factors.")
 
 OPTIONAL = ["backtest", "whatif", "events", "stocks", "notegen"]
 
