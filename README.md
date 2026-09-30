@@ -36,6 +36,3 @@ streamlit run app.py
 - Repo rate and import duty history are hand-maintained in `data/*.csv` (last repo entry: June 2025). Add a row whenever a rate changes.
 - India CPI comes from FRED and can lag; if missing, the India inflation rows are skipped.
 - Central bank buying, ETF flows and Indian premiums (World Gold Council) have no free API; add them manually.
-
-## Credit
-Factor framework inspired by The Valuation School's gold price tracking checklist. Data and analysis are my own.
