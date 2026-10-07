@@ -13,6 +13,8 @@ gold-tracker-india/
 ├── events.py            [optional tab] event studies
 ├── stocks.py            [optional tab] gold stocks deep dive
 ├── screener.py          [optional tab] Screener-style company view
+├── longrun.py           [optional tab] long history and crisis episodes
+├── etf_sgb.py           [optional tab] gold ETF, SGB and physical gold compared
 ├── notegen.py           [optional tab] auto-drafted monthly note
 ├── requirements.txt     list of tools to install
 ├── README.md            front page for GitHub
@@ -22,7 +24,10 @@ gold-tracker-india/
 ├── data/
 │   ├── repo_rate.csv    RBI repo rate history (you update)
 │   ├── import_duty.csv  gold import duty history (you update)
-│   └── events.csv       events for the event study (you can add rows)
+│   ├── events.csv       events for the event study (you can add rows)
+│   ├── episodes.csv     crisis episodes for the long history tab (editable)
+│   ├── sgb_series.csv   real SGB series you add from RBI notices (starts empty)
+│   └── gold_long_history.csv  OPTIONAL: your download of monthly gold since 1960 (columns: date, gold_usd)
 ├── tests/
 │   ├── test_analysis.py checks the maths is right
 │   ├── test_app.py      checks the dashboard opens (practice, live and failure cases)
@@ -34,7 +39,7 @@ gold-tracker-india/
 ```
 
 ## Adding pieces one at a time
-The six `[optional tab]` files each add one tab. Delete one and its tab disappears; add it back and the tab returns. Nothing else needs editing.
+The eight `[optional tab]` files each add one tab. Delete one and its tab disappears; add it back and the tab returns. Nothing else needs editing.
 
 ## Order I suggest
 1. Run with practice data first (no key needed) to see everything open.

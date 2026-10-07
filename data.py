@@ -17,10 +17,10 @@ MARKET = {"gold": "GC=F", "dxy": "DX-Y.NYB", "usdinr": "INR=X"}
 STOCKS = {"Muthoot Finance": "MUTHOOTFIN.NS", "Titan": "TITAN.NS", "Kalyan Jewellers": "KALYANKJIL.NS"}
 
 
-def fred(series_id: str) -> pd.Series:
+def fred(series_id: str, start: str = START) -> pd.Series:
     r = requests.get(
         "https://api.stlouisfed.org/fred/series/observations",
-        params=dict(series_id=series_id, api_key=FRED_KEY, file_type="json", observation_start=START),
+        params=dict(series_id=series_id, api_key=FRED_KEY, file_type="json", observation_start=start),
         timeout=30,
     )
     r.raise_for_status()
