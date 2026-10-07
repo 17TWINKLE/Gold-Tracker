@@ -12,6 +12,7 @@ gold-tracker-india/
 ├── whatif.py            [optional tab] what-if sliders
 ├── events.py            [optional tab] event studies
 ├── stocks.py            [optional tab] gold stocks deep dive
+├── screener.py          [optional tab] Screener-style company view
 ├── notegen.py           [optional tab] auto-drafted monthly note
 ├── requirements.txt     list of tools to install
 ├── README.md            front page for GitHub
@@ -25,13 +26,15 @@ gold-tracker-india/
 ├── tests/
 │   ├── test_analysis.py checks the maths is right
 │   ├── test_app.py      checks the dashboard opens (practice, live and failure cases)
-│   └── test_data_mock.py checks the live-data code using faked FRED / Yahoo replies
+│   ├── test_data_mock.py checks the live-data code using faked FRED / Yahoo replies
+│   ├── test_screener.py checks the company screener
+│   └── conftest.py      stops tests touching the real internet
 └── docs/
     └── FINDINGS_TEMPLATE.md  where you write your results
 ```
 
 ## Adding pieces one at a time
-The five `[optional tab]` files each add one tab. Delete one and its tab disappears; add it back and the tab returns. Nothing else needs editing.
+The six `[optional tab]` files each add one tab. Delete one and its tab disappears; add it back and the tab returns. Nothing else needs editing.
 
 ## Order I suggest
 1. Run with practice data first (no key needed) to see everything open.

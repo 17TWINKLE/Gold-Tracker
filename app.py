@@ -1,5 +1,5 @@
 """Streamlit dashboard. Run: streamlit run app.py
-Optional modules (backtest, whatif, events, stocks, notegen) appear as extra tabs automatically
+Optional modules (backtest, whatif, events, stocks, screener, notegen) appear as extra tabs automatically
 when their .py file is present in this folder."""
 import importlib
 import os
@@ -13,7 +13,7 @@ st.set_page_config(page_title="Gold Tracker India", layout="wide")
 st.title("Gold Tracker: Indian Investor View")
 st.caption("Global gold → USD/INR → Indian market factors.")
 
-OPTIONAL = ["backtest", "whatif", "events", "stocks", "notegen"]
+OPTIONAL = ["backtest", "whatif", "events", "stocks", "screener", "notegen"]
 
 
 @st.cache_data(ttl=6 * 3600)
